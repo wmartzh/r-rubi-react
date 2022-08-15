@@ -10,7 +10,6 @@ import { BiLogOut } from "react-icons/bi";
 function MainLayout() {
   const userContext = useContext(UserContext);
 
-  const email = userContext ? userContext.email : null;
   return (
     <>
       <Sidebar>
@@ -23,7 +22,9 @@ function MainLayout() {
       <div className="wrapper ">
         <Header>
           <div className="navbar-item has-dropdown is-hoverable">
-            <span className="navbar-link">{email}</span>
+            <span className="navbar-link">
+              {userContext && userContext.email}
+            </span>
             <div className="navbar-dropdown">
               <div
                 className="nav-item"

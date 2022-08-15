@@ -15,7 +15,6 @@ function Login() {
     if (response) {
       navigate("/", { replace: true });
     }
-    console.log("🔰 > file: Login.jsx > line 12 > login > response", response);
   };
   return (
     <div className="hero is-widescreen">

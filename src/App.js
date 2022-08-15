@@ -1,4 +1,5 @@
 import "./App.css";
+import "ka-table/style.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
